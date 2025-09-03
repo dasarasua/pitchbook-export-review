@@ -52,14 +52,22 @@ Loads an Excel file named **`companies.xlsx`** with 4 sheets and lets you **Appr
 > ✅ All four sheets **must have the same column set and order** (e.g., `Company Name`, `Industry`, `HQ`, `Description`, `Website`, `Employees`, `Revenue`, etc.).  
 > You can use the provided template at `templates/companies_template.xlsx`).
 
-**Run locally:**
-```bash
-cd product2-review-ui
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-cp ../templates/companies_template.xlsx ./companies.xlsx   # optional: start from template
-streamlit run app.py
-```
+## ⚡ Run locally
+
+1. Open a terminal.  
+2. Move into the folder where `app.py` lives, for example:
+   ```bash
+   cd "/Users/yourname/Library/Mobile Documents/com~apple~CloudDocs/Coding/Pitchbook code"
+   ```
+3. Install the needed packages (one time only):
+   ```bash
+   pip install streamlit pandas openpyxl
+   ```
+4. Run the app:
+   ```bash
+   streamlit run app.py
+   ```
+5. Your browser will open at [http://localhost:8501](http://localhost:8501).
 
 **Usage:**
 1. Place `companies.xlsx` next to `app.py`.  
